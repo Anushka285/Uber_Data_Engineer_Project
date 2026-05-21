@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ride Booking Service</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a, #0ea5e9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      color: white;
+    }
+
+    .container {
+      max-width: 850px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.13);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 28px;
+      padding: 55px;
+      box-shadow: 0 25px 80px rgba(0, 0, 0, 0.35);
+      animation: fadeIn 0.8s ease;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.18);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 52px;
+      line-height: 1.1;
+      margin: 0 0 18px;
+    }
+
+    p {
+      font-size: 20px;
+      color: #e0f2fe;
+      max-width: 620px;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 16px 28px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #0f172a;
+      background: white;
+      border-radius: 14px;
+      text-decoration: none;
+      box-shadow: 0 12px 35px rgba(255, 255, 255, 0.25);
+      transition: all 0.25s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 45px rgba(255, 255, 255, 0.35);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .feature-card {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.13);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      font-size: 15px;
+    }
+
+    .feature-card strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 17px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        padding: 35px 24px;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">🚗 Smart Ride Booking</span>
+
+    <h1>Book your ride in one click.</h1>
+
+    <p>
+      Enjoy a smooth, fast, and reliable ride booking experience powered by real-time event streaming.
+    </p>
+
+    <a href="/book" class="button">Book a Ride →</a>
+
+    <div class="features">
+      <div class="feature-card">
+        <strong>⚡ Instant Booking</strong>
+        Your ride request is generated immediately.
+      </div>
+
+      <div class="feature-card">
+        <strong>📡 Event Hub Ready</strong>
+        Booking data is sent to Azure Event Hub.
+      </div>
+
+      <div class="feature-card">
+        <strong>✅ Reliable Flow</strong>
+        Simple frontend connected to live backend logic.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
