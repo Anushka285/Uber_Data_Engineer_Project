@@ -50,11 +50,11 @@ The architecture demonstrates a real-time event-driven pipeline where ride booki
 
 ---
 
-## ⚙️ Azure Data Factory Pipeline
+## ⚙️ Azure Data Factory Ingestion Pipeline
 
 <img width="824" height="421" alt="image" src="https://github.com/user-attachments/assets/867d9cc7-4e05-48fe-81c9-f9db3c3c1fdf" />
 
-The project uses Azure Data Factory to orchestrate and automate the end-to-end data ingestion workflow. The pipeline dynamically processes ride booking data and triggers downstream activities for real-time streaming and processing.
+The project uses Azure Data Factory (ADF) to orchestrate and automate the real-time data ingestion workflow. The pipeline dynamically processes incoming ride booking files/events and triggers downstream streaming activities for scalable data processing.
 
 ---
 
