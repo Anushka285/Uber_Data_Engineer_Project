@@ -46,6 +46,15 @@ The project showcases a simple but realistic real-time event streaming architect
 
 <img width="1290" height="867" alt="image" src="https://github.com/user-attachments/assets/f5c74f7b-f08a-4e37-8ebb-d2eae76fbbfa" />
 
+The architecture demonstrates a real-time event-driven pipeline where ride booking events are generated from the web application, streamed through Azure Event Hub, processed using Spark/Databricks, and transformed into analytical star-schema structures for downstream analytics and reporting.
+
+---
+
+## ⚙️ Azure Data Factory Pipeline
+
+<img width="824" height="421" alt="image" src="https://github.com/user-attachments/assets/867d9cc7-4e05-48fe-81c9-f9db3c3c1fdf" />
+
+The project uses Azure Data Factory to orchestrate and automate the end-to-end data ingestion workflow. The pipeline dynamically processes ride booking data and triggers downstream activities for real-time streaming and processing.
 
 ---
 
@@ -55,11 +64,13 @@ The project showcases a simple but realistic real-time event streaming architect
 
 <img width="938" height="902" alt="image" src="https://github.com/user-attachments/assets/e877e956-3778-419f-a6e8-ad81b79ab218" />
 
+The homepage provides a modern ride booking interface where users can initiate ride requests that trigger real-time event streaming workflows.
 
 ### Ride Confirmation Page
 
 <img width="943" height="903" alt="image" src="https://github.com/user-attachments/assets/7d8f82ec-d9c9-4dbe-bc35-8f942949fc9c" />
 
+After booking a ride, the application confirms successful event ingestion and demonstrates the end-to-end integration between the frontend, FastAPI backend, and Azure Event Hub.
 
 ---
 
